@@ -1,0 +1,22 @@
+START
+
+INPUT N
+
+SET isPrime = true
+
+FOR i = 2 TO √N
+
+    IF N MOD i = 0 THEN
+        SET isPrime = false
+        BREAK
+    END IF
+
+END FOR
+
+IF isPrime = true THEN
+    PRINT "Prime"
+ELSE
+    PRINT "Not Prime"
+END IF
+
+STOP

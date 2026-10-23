@@ -1,0 +1,19 @@
+START
+
+INPUT N
+
+SET reversed = 0
+
+WHILE N > 0
+
+    SET digit = N MOD 10
+
+    SET reversed = reversed * 10 + digit
+
+    SET N = N DIV 10
+
+END WHILE
+
+PRINT reversed
+
+STOP
